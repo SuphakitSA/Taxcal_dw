@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<meta charset="UTF-8"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>   @import url(./style.css); </style>
+<script src="script.js"></script>
+
+
+<body>
+
+<h1>เครื่องคิดเลข</h1>
+<p>
+  รายได้ (บาท)
+  <button onclick="addbox()" id="add">+</button>
+  <button onclick="delbox()" id="del">-</button>
+  <br />
+<input type="number" id="income" name="income"  oninput="calculateTax()" required><br />
+<input type="number" id="income2" class="income" oninput="calculateTax()" disabled><br />
+<input type="number" id="income3" class="income" oninput="calculateTax()" disabled><br />
+</p>
+<p>
+  รายได้รวม (บาท)<br />
+  <input type="text" id="sum" readonly><br/><br/>
+  อัตราภาษี(%)<br />
+  <input type="text" id="taxRate" readonly><br/><br/>
+  ภาษีที่ต้องจ่าย (บาท)<br />
+  <input type="text" id="taxResult" readonly><br/><br/>
+</p>
+
+<p>
+<button onclick="Togglemode()" id="mode">Toggle dark mode</button>
+</p>
+
+</body>
+</html>
+
